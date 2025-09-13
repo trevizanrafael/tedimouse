@@ -1396,3 +1396,41 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+
+.back-to-wall-btn {
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 12px 26px;
+    background-color: #2E3E50;      /* azul escuro TEDI */
+    color: #E0E0E0;                  /* texto claro */
+    border: 2px solid #2E3E50;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+}
+
+.back-to-wall-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    background-color: #3a4f65;      /* leve clareada no hover */
+    color: #8EC6E6;                  /* combina com a paleta */
+}
+
+.back-to-wall-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.18);
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .back-to-wall-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
